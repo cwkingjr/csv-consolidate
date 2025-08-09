@@ -1,0 +1,16 @@
+[project]
+name = "csv-consolidate"
+version = "0.1.0"
+description = "Same format CSV consolidator"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "nicegui>=2.22.1",
+    "pywebview>=6.0",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4.1"]
+
+[project.scripts]
+csv_consolidate = "csv_consolidate.main:ui.run"
