@@ -53,3 +53,11 @@ csv_consolidate.exe
 ## Output
 
 When you run CSV Consolidate you will get the consolidated file in your Documents folder but will also get some terminal output that will tell you the directory you selected, give a print out of a collapsed text version of the consilidated file contents (basically so you can see that it worked and what some of the headers were), and tell you where your file was written and what the name is.
+
+## Uninstall CSV Consolidate
+
+Using one of the terminals mentioned above, run the below command. Pay attention to the dash in the name because here we are uninstalling the entire project and above, where we used the underscore in the name, we were calling the entrypoint (the entrypoint named csv_consolidate or csv_consolidate.exe just calls into the program/project called csv-consolidate so be careful with the names).
+
+```bash
+uv tool uninstall csv-consolidate
+```
