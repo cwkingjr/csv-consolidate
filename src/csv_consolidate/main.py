@@ -6,19 +6,21 @@ class FileDialogExample(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.initUI()
+        self.init_ui()
 
-    def initUI(self):
-        self.setWindowTitle("QFileDialog Example - Select Directory")
+    def init_ui(self):
+        self.setWindowTitle("CSV Consolidate")
         self.setGeometry(100, 100, 400, 300)
 
-        self.button = QPushButton("Select Directory", self)
-        self.button.clicked.connect(self.selectDirectoryDialog)
+        self.button = QPushButton("Select CSV Directory", self)
+        self.button.clicked.connect(self.select_directory_dialog)
         self.button.setGeometry(150, 150, 150, 30)
 
-    def selectDirectoryDialog(self):
+    def select_directory_dialog(self):
         file_dialog = QFileDialog(self)
-        file_dialog.setWindowTitle("Select Directory")
+        file_dialog.setWindowTitle(
+            "CSV Consolidate: Select Directory with Only CSV Files to Consolidate",
+        )
         file_dialog.setFileMode(QFileDialog.FileMode.Directory)
         file_dialog.setViewMode(QFileDialog.ViewMode.List)
 
