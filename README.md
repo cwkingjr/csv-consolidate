@@ -36,6 +36,12 @@ This downloads the repository info, builds the package into a python virtual env
 
 On Linux, the entrypoint for this tool is `csv_consolidate` and on Windows it's `csv_consolidate.exe`.
 
+## Update CSV Consolidate
+
+```bash
+uv tool update https://github.com/cwkingjr/csv-consolidate.git
+```
+
 ## Invoke CSV Consolidate
 
 On Linux, open any terminal and run:
@@ -49,6 +55,16 @@ On Windows, open PS or the Git Bash Terminal and run:
 ```bash
 csv_consolidate.exe
 ```
+
+When you invoke the command above, the program will pop up a small application window with a single button in it that opens the native system folder picker. Once you select the folder you want to process, the app will pause for a few seconds as it processes the files in the folder and writes the consolidated file. Once that's done, the app window will close itself.
+
+Here's what the application window looks like on a Mac:
+
+<p align="center"><img src="images/csv_consolidate_gui.png" width="400" /></p>
+
+And here's what the folder selection viewer looks like on a Mac:
+
+<p align="center"><img src="images/csv_consolidate_directory_selection.png" width="400" /></p>
 
 ## Output
 
